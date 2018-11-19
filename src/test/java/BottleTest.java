@@ -20,9 +20,20 @@ public class BottleTest {
     public void drinkOnce(){
         assertEquals(90, bottle.drink(1));
     }
+
     @Test
     public void drinkTwice(){
         assertEquals(80, bottle.drink(2));
+    }
+
+    @Test
+    public void emptyBottle(){
+        assertEquals(0, bottle.empty());
+    }
+
+    @Test
+    public void fillBottle(){
+        assertEquals(100, bottle.fill());
     }
 
 }
